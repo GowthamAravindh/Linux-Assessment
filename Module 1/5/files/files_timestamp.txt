@@ -1,0 +1,5 @@
+total 0
+-rw-rw-r-- 1 gowtham gowtham 0 Jan 29 21:22 files_timestamp.txt
+-rw-rw-r-- 1 gowtham gowtham 0 Jan 29 21:22 file_3.txt
+-rw-rw-r-- 1 gowtham gowtham 0 Jan 29 21:22 file_2.txt
+-rw-rw-r-- 1 gowtham gowtham 0 Jan 29 21:22 file_1.txt

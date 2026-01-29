@@ -1,0 +1,5 @@
+gowtham@gowtham-VirtualBox:~/Documents/Linux Assessment/Module 1/1$ touch file_1.sh
+gowtham@gowtham-VirtualBox:~/Documents/Linux Assessment/Module 1/1$ chmod a+x file_1.sh
+gowtham@gowtham-VirtualBox:~/Documents/Linux Assessment/Module 1/1$ ls -l file_1.sh
+-rwxrwxr-x 1 gowtham gowtham 0 Jan 29 21:01 file_1.sh
+

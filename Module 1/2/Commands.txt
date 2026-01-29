@@ -1,0 +1,5 @@
+gowtham@gowtham-VirtualBox:~/Documents/Linux Assessment/Module 1/2$ touch file_2.sh
+gowtham@gowtham-VirtualBox:~/Documents/Linux Assessment/Module 1/2$ chmod g-w file_2.sh
+gowtham@gowtham-VirtualBox:~/Documents/Linux Assessment/Module 1/2$ ls -l file_2.sh
+-rw-r--r-- 1 gowtham gowtham 0 Jan 29 20:59 file_2.sh
+
