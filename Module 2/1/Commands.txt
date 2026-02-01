@@ -1,0 +1,5 @@
+arjun-v@Arjun-V-HP-Victus:~/Module 2/1$ ls
+'Black image.png'   Free_Test_Data_1MB_JPG.jpg   _.jpeg
+arjun-v@Arjun-V-HP-Victus:~/Module 2/1$ find . -type f -size +1M > large_files.txt
+arjun-v@Arjun-V-HP-Victus:~/Module 2/1$ touch Commands.txt
+

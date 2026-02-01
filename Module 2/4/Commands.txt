@@ -1,0 +1,8 @@
+arjun-v@Arjun-V-HP-Victus:~/Module 2/4$ ps aux --sort=-%mem | head -n 2
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+arjun-v     5281  4.2  9.2 1463289372 675928 ?   Sl   11:25   1:46 /snap/brave/531/opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=3748 --enable-crash-reporter=10ae6a12-79c7-41a5-8833-e8a17ebaf0d1, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=40 --time-ticks-at-unix-epoch=-1769944856391057 --launch-time-ticks=270883552 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,16882865880716233868,10968871136287985440,262144 --variations-seed-version=main@09d660d71b42708b317d6c67a3a8d3a5962bdd20
+arjun-v@Arjun-V-HP-Victus:~/Module 2/4$ kill -9 5281
+arjun-v@Arjun-V-HP-Victus:~/Module 2/4$ ps aux --sort=-%mem | head -n 2
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+arjun-v     3746  2.7  5.6 34350564 413888 ?     Sl   11:21   1:14 /snap/brave/531/opt/brave.com/brave/brave
+

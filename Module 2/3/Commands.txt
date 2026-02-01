@@ -1,0 +1,2 @@
+arjun-v@Arjun-V-HP-Victus:~/Module 2/3$ grep "ERROR" log.txt | grep -v "DEBUG">filtered_log.txt
+
