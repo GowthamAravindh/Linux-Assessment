@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# ===============================
-# Validate input
-# ===============================
 if [ "$#" -ne 1 ]; then
     echo "Usage: $0 <input_file>"
     exit 1
@@ -16,12 +13,8 @@ if [ ! -f "$INPUT_FILE" ]; then
     exit 1
 fi
 
-# Clear output file
 > "$OUTPUT_FILE"
 
-# ===============================
-# Read input line by line
-# ===============================
 while IFS= read -r line; do
 
     # Extract frame.time
@@ -44,5 +37,5 @@ while IFS= read -r line; do
 
 done < "$INPUT_FILE"
 
-echo "Extraction completed. Output saved to output.txt"
+echo "Output saved to output.txt"
 
