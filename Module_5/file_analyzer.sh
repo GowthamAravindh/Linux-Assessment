@@ -1,16 +1,10 @@
 #!/bin/bash
 
-# ================================
-# Global variables
-# ================================
 ERROR_LOG="errors.log"
 
 # Clear previous error log
 > "$ERROR_LOG"
 
-# ================================
-# Help menu (Here document)
-# ================================
 show_help() {
 cat << EOF
 Usage: $0 [OPTIONS]
@@ -28,16 +22,11 @@ Examples:
 EOF
 }
 
-# ================================
-# Error handler
-# ================================
+
 log_error() {
     echo "ERROR: $1" | tee -a "$ERROR_LOG"
 }
 
-# ================================
-# Recursive search function
-# ================================
 recursive_search() {
     local dir="$1"
     local keyword="$2"
@@ -53,17 +42,12 @@ recursive_search() {
     done
 }
 
-# ================================
-# Argument count check
-# ================================
+
 if [ "$#" -eq 0 ]; then
     log_error "No arguments provided. Use --help."
     exit 1
 fi
 
-# ================================
-# getopt parsing
-# ================================
 while getopts ":d:f:k:-:" opt; do
     case "$opt" in
         d) DIR="$OPTARG" ;;
@@ -86,9 +70,7 @@ while getopts ":d:f:k:-:" opt; do
     esac
 done
 
-# ================================
-# Validation using regex
-# ================================
+
 if [ -z "$KEYWORD" ]; then
     log_error "Keyword cannot be empty"
     exit 1
@@ -113,9 +95,7 @@ if [ -n "$FILE" ]; then
     exit 0
 fi
 
-# ================================
-# Directory recursive search
-# ================================
+
 if [ -n "$DIR" ]; then
     if [ ! -d "$DIR" ]; then
         log_error "Directory does not exist: $DIR"
@@ -127,8 +107,5 @@ if [ -n "$DIR" ]; then
     exit 0
 fi
 
-# ================================
-# Fallback
-# ================================
 log_error "Invalid usage. Use --help."
 exit 1
